@@ -49,11 +49,11 @@ console.log(sum);
 
 //TODO Write a program that creates the following array, then calculates and shows the array's maximum value.
 
-const values = [3, 11, 7, 2, 9, 10];
+const values = ['8', '3', '-5', '42', '-1', '0', '0', '-9', '4', '7', '4', '-4'];
 
 let max = values[0]; //max is quivalent to 3 at this point.
 
-for (let i = 1; i < values.length; i++) {
+for (let i = 1; i < values.length; i++) { // we didn't use 0 in the loop beacuse we have already set up the starting point in the variables
 	//loop to go through the array.
 	if (values[i] > max) {
 		//if the element that is in index (i), which changes per iteration.
