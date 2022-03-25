@@ -56,11 +56,11 @@ function reverseArray(arr) {
 console.log(reverseArray(['A', 'B', 'C']));
 
 function reverseArrayInPlace(arr) {
-	const lastI = arr.length - 1;
+	const lastE = arr.length - 1;
 	for (let i = 0; i <= Math.floor(arr.length / 2); i++) {
 		let firstE = arr[i]; //The first element of the array is assigned to the new variable FirstE
-		arr[i] = arr[lastI - i]; //Then the last element of the array is assigned to the first element of the array
-		arr[lastI - i] = firstE; //The first element of the array that was held by firstE is assigned to the last element of the array.
+		arr[i] = arr[lastE - i]; //Then the last element of the array is assigned to the first element of the array
+		arr[lastE - i] = firstE; //The first element of the array that was held by firstE is assigned to the last element of the array.
 	}
 	return arr;
 }

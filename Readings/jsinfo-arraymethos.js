@@ -23,3 +23,41 @@ let filtered = (arr, a, b) => {
 };
 
 console.log(filtered(arr, 1, 7));
+
+//TODO Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
+
+let filteredInPlace = (arr, a, b) => {
+	for (let i = 0; i < arr.length; i++) {
+		let spliced = arr[i];
+		if (spliced < a || spliced > b) {
+			arr.splice(i, 1); //since splicing an element from the array causes it to colapse...
+			i--; //we tell the loop to 'take a step back' to make sure that it doesn't skip the element that colapsed into the spliced element spot
+		}
+	}
+};
+
+let newArr = [5, 3, 8, 1, 15];
+
+filteredInPlace(newArr, 1, 10);
+
+console.log(newArr);
+
+//TODO Sort in decreasing order
+
+let toSort = [5, 2, 1, -10, 8];
+
+toSort.sort((a, b) => b - a);
+
+alert(toSort);
+
+//TODO We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+
+let strArr = ['HTML', 'JavaScript', 'CSS'];
+
+let copySorted = (arr) => {
+	return arr.slice().sort(); //slice without argument is just to create a copy of the original array without modifying the original, we the sort that new copy and return it.
+};
+
+console.log(copySorted(strArr));
+
+//TODO
