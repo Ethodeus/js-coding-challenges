@@ -71,34 +71,34 @@ console.log(copySorted(strArr));
 
 //TODO: You have an array of user objects, each one has user.name. Write the code that converts it into an array of names.
 
-// let john = { name: "John", age: 25 };
-// let pete = { name: "Pete", age: 30 };
-// let mary = { name: "Mary", age: 28 };
+let john = { name: 'John', age: 25 };
+let pete = { name: 'Pete', age: 30 };
+let mary = { name: 'Mary', age: 28 };
 
-// let users = [ john, pete, mary ];
+let users = [john, pete, mary];
 
-// let names = users.map(item => ` ${item.name}`)
+let names = users.map((item) => ` ${item.name}`);
 
-// alert( names ); // John, Pete, Mary
+alert(names); // John, Pete, Mary
 
 //TODO: You have an array of user objects, each one has name, surname and id.
 
-// let john = { name: "John", surname: "from Dallas", id: 1 };
-// let pete = { name: "Pete", surname: "Hunt", id: 2 };
-// let mary = { name: "Mary", surname: "Key", id: 3 };
+let john = { name: 'John', surname: 'from Dallas', id: 1 };
+let pete = { name: 'Pete', surname: 'Hunt', id: 2 };
+let mary = { name: 'Mary', surname: 'Key', id: 3 };
 
-// let users = [ john, pete, mary ];
+let users = [john, pete, mary];
 
-// let usersMapped = users.map((user) => {
-//     let newUser = {
-//         fullName: `${user.name} ${user.surname}`,
-//         id: user.id
-//     }
-// return newUser;
-// });
+let usersMapped = users.map((user) => {
+	let newUser = {
+		fullName: `${user.name} ${user.surname}`,
+		id: user.id,
+	};
+	return newUser;
+});
 
-// console.log(usersMapped[0].id) // 1
-// console.log(usersMapped[0].fullName) // John Smith
+console.log(usersMapped[0].id); // 1
+console.log(usersMapped[0].fullName); // John Smith
 
 //TODO: Write the function sortByAge(users) that gets an array of objects with the age property and sorts them by age.
 
