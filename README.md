@@ -17,16 +17,23 @@ I'm constantly reviewing my codewars to see if there is a better way to approach
 ## Lessons Learned:
 
 This is one of the best examples I like to go back to keep track of my progress and what i've learned:
-
-<p align="left">
-<img src="">
+<br>
+<br>
+<p align='center'>
+This is one of the first codewars I completed:
 </p>
 
-## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+<p align='center'>
+<img src="https://user-images.githubusercontent.com/101031188/163731320-20653bdc-4851-4cad-bcf4-7df15e372ed2.png" width="50%">
+</p>
+<br>
+<br>
+<p align='center'>
+And this is the same problem, refactored with new things I learned 2 weeks later:
+</p>
 
-**Palettable:** https://github.com/alecortega/palettable
+<p align='center'>
+<img src="https://user-images.githubusercontent.com/101031188/163731319-7d9fac57-63b7-49b1-b5d7-7adff2d35e40.png" width="50%">
+</p>
 
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
+This is a great motivation to keep learning and not feel discouraged, because even though you feel like you're not making progess or learning much, you are. 
