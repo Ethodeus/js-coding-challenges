@@ -36,4 +36,4 @@ And this is the same problem, refactored with new things I learned 2 weeks later
 <img src="https://user-images.githubusercontent.com/101031188/163731319-7d9fac57-63b7-49b1-b5d7-7adff2d35e40.png" width="50%">
 </p>
 
-This is a great motivation to keep learning and not feel discouraged, because even though you feel like you're not making progess or learning much, you are. 
+This is a great motivation to keep learning and not feel discouraged, because even though you feel like you're not making progress or learning much, you are. 
