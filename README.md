@@ -1,6 +1,6 @@
 # My daily coding challenges
 
-This space is dedicated for my currently codewars progression, I like to keep track of every challenge that I overcome and I will do my best to go back, review my code and refactor with new and more efficient things that i've learned. 
+This space is dedicated to my current codewars progression. I like to keep track of every challenge that I overcome and I will do my best to go back, review and refactor my code with new and more efficient things that i've learned. 
 
 https://github.com/Ethodeus/js-coding-challenges
 
@@ -16,7 +16,7 @@ I'm constantly reviewing my codewars to see if there is a better way to approach
 
 ## Lessons Learned:
 
-This is one of the best examples I like to go back to keep track of my progress and what i've learned:
+Here is a detailed example of the progress I've made with the new things I've learned.
 <br>
 <br>
 <p align='center'>
