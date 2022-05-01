@@ -74,9 +74,7 @@ const yearFifteen = inventors.filter(
 	}
 );
 
-const fifteen = inventors.filter((inventor) =>
-	inventor.year >= 1500 && inventor.year < 1600 ? true : false
-);
+const fifteen = inventors.filter((inventor) => (inventor.year >= 1500 && inventor.year < 1600 ? true : false));
 
 console.table(yearFifteen);
 
@@ -85,17 +83,13 @@ console.table(fifteen);
 //* Array.prototype.map()
 //* 2. Give us an array of the inventors first and last names
 
-const fullnames = inventors.map(
-	(inventor) => inventor.first + ' ' + inventor.last
-); //we use map to iterate through all the array elements and then we select their 'subelements' called first and last, the inventor function takes out those values, concatenates them and creates a new array with only those values.
+const fullnames = inventors.map((inventor) => inventor.first + ' ' + inventor.last); //we use map to iterate through all the array elements and then we select their 'subelements' called first and last, the inventor function takes out those values, concatenates them and creates a new array with only those values.
 
 console.log(fullnames);
 
 //---------------------------
 
-const fullnames2 = inventors.map(
-	(inventor) => `${inventor.first} ${inventor.last}`
-);
+const fullnames2 = inventors.map((inventor) => `${inventor.first} ${inventor.last}`);
 
 console.log(fullnames2);
 
@@ -150,9 +144,7 @@ console.table(inventorAge);
 
 const category = document.querySelector('.mw-category');
 const links = Array.from(category.querySelectorAll('a'));
-const de = links
-	.map((link) => link.textContent)
-	.filter((streetName) => streetName.includes('de'));
+const de = links.map((link) => link.textContent).filter((streetName) => streetName.includes('de'));
 
 //* 7. sort Exercise
 // Sort the people alphabetically by last name
@@ -186,16 +178,12 @@ const data = [
 	'truck',
 ];
 
-const transportation = data.reduce(function (
-	obj /** array */,
-	item /** tally */
-) {
+const transportation = data.reduce(function (obj /** array */, item /** tally */) {
 	if (!obj[item]) {
 		obj[item] = 0;
 	}
 	obj[item]++;
 	return obj;
-},
-{});
+}, {});
 
 console.log(transportation);
