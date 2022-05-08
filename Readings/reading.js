@@ -159,15 +159,7 @@ console.log(nb1, nb2, nb3);
 // 4. Write a program that accepts a month number (between 1 and 12), then shows the number of days of that month. Leap years are excluded. Incorrect inputs must be taken into account.
 
 const month = Number(prompt('Enter a month number:'));
-if (
-	month === 1 ||
-	month === 3 ||
-	month === 5 ||
-	month === 7 ||
-	month === 8 ||
-	month === 10 ||
-	month === 12
-) {
+if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
 	console.log('This month has 31 days');
 } else if (month === 4 || month === 6 || month === 9 || month === 11) {
 	console.log('This month has 30 days');
@@ -234,14 +226,7 @@ let minutes = Number(prompt('Enter the minutes:'));
 let seconds = Number(prompt('Enter the seconds:'));
 
 // We start by testing errors cases, to make sure that the user inputs correct values
-if (
-	hours >= 0 &&
-	hours <= 23 &&
-	minutes >= 0 &&
-	minutes <= 59 &&
-	seconds >= 0 &&
-	seconds <= 59
-) {
+if (hours >= 0 && hours <= 23 && minutes >= 0 && minutes <= 59 && seconds >= 0 && seconds <= 59) {
 	seconds++; // Incrementing the seconds, this code block would stop here if the increment in seconds doesn't affect the minutes, hours or days.
 	if (seconds === 60) {
 		seconds = 0; //if seconds reaches 60, it resets to 0 and increments the minutes value
@@ -254,13 +239,9 @@ if (
 			}
 		}
 	}
-	console.log(
-		`In a second, the time will be ${hours} hours, ${minutes} minutes and ${seconds} seconds`
-	);
+	console.log(`In a second, the time will be ${hours} hours, ${minutes} minutes and ${seconds} seconds`);
 } else {
-	console.log(
-		'Incorrect values; enter hours ranging from 0 to 24 and minutes, and seconds ranging from 0 to 60!'
-	); //in case the user inputs an incorrect value for seconds, minutes and days.
+	console.log('Incorrect values; enter hours ranging from 0 to 24 and minutes, and seconds ranging from 0 to 60!'); //in case the user inputs an incorrect value for seconds, minutes and days.
 }
 
 //! Repeat statements (LOOPS)
@@ -390,9 +371,7 @@ while (multiplicand2 < 2 || multiplicand2 > 9) {
 console.log(`Here's the multiplication table for ${multiplicand2}`);
 
 for (multiplier = 1; multiplier <= 10; multiplier++) {
-	console.log(
-		`${multiplicand2} x ${multiplier} = ${multiplicand2 * multiplier}`
-	);
+	console.log(`${multiplicand2} x ${multiplier} = ${multiplicand2 * multiplier}`);
 }
 
 //5. Write a program that plays "neither yes, nor no" with the user. Specifically, the programs asks the user to enter text until either "yes" or "no" is typed, which ends the game.
@@ -401,9 +380,7 @@ let input = ''; // we set up a value to enter the loop
 
 while (input !== 'yes' && input !== 'no') {
 	// if the input is not yes or no, then keep prompting if you want to play
-	input = prompt(
-		'Do you want to play "Neither yes, nor no" with me?'
-	).toLowerCase();
+	input = prompt('Do you want to play "Neither yes, nor no" with me?').toLowerCase();
 }
 
 alert('You lost!'); //if you type yes or no, you lose.
@@ -546,9 +523,7 @@ const area = (radius) => Math.PI * radius ** 2;
 const r = Number(prompt('Please enter the circle radius in centimeters'));
 
 console.log(
-	`The circumference of your circle is ${circumference(
-		r
-	)} cms, and the area of your circle is ${area(r)} squared cms`
+	`The circumference of your circle is ${circumference(r)} cms, and the area of your circle is ${area(r)} squared cms`
 );
 
 //! ELOQUENT JS EXERCISES
