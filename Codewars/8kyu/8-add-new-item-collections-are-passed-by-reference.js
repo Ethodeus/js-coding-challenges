@@ -26,7 +26,7 @@ function addExtra(listOfNumbers) {
 	return newArr;
 }
 
-//Since arrays are reference type objects, we cannot do let newArr = listOfNumbers, because if we modify the new array, it will also modify the reference, to create a shallow copy we can use the spread operator.
+//Since arrays are a reference type objects, we cannot do let newArr = listOfNumbers, because if we modify the new array, it will also modify the reference array, to create a shallow copy we can use the spread operator.
 
 //TEST CASES ->
 

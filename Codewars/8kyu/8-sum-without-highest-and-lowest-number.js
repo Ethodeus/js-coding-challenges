@@ -24,7 +24,7 @@ If an empty value ( null, None, Nothing etc. ) is given instead of an array, or 
 //SOLUTION(S) ->
 
 function sumArray(array) {
-	if (!array || array.length === 0 || array.length === 1) {
+	if (!array || array.length < 3) {
 		return 0;
 	}
 
@@ -37,7 +37,7 @@ function sumArray(array) {
 //Arrow function alternative
 
 let sumArray = (array) => {
-	if (!array || array.length === 0 || array.length === 1) {
+	if (!array || array.length < 3) {
 		return 0;
 	}
 
