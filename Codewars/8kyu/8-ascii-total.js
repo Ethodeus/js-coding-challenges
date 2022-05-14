@@ -21,6 +21,10 @@ function uniTotal(str) {
 				.reduce((a, c) => a + c, 0);
 }
 
+//Codewars Alternative
+
+const uniTotal = (str) => [...str].reduce((acc, char) => acc + char.charCodeAt(0), 0);
+
 //TEST CASES ->
 
 console.log(uniTotal(''), 0);
