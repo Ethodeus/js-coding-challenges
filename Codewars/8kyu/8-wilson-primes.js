@@ -14,6 +14,8 @@ Your task is to create a function that returns true if the given number is a Wil
 
 //SOLUTION(S) ->
 
+//I have no idea how recursion works
+
 function factorial(n) {
 	if (n == 0) return 1;
 	else return n * factorial(n - 1);
@@ -21,7 +23,6 @@ function factorial(n) {
 
 function amIWilson(p) {
 	let result = (factorial(p - 1) + 1) / Math.pow(p, 2);
-	console.log(result);
 	return Number.isInteger(result);
 }
 
