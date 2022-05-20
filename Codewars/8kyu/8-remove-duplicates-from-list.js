@@ -10,6 +10,19 @@ function distinct(a) {
 	return [...new Set(a)];
 }
 
+//Alternative using includes method and for loop
+
+function distinct(arr) {
+	let res = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		if (!res.includes(arr[i])) {
+			res.push(arr[i]);
+		}
+	}
+	return res;
+}
+
 //TEST CASES ->
 
 console.log(distinct([1]), [1]);
