@@ -26,8 +26,6 @@ function isDigit(s) {
 	return s == parseFloat(s);
 }
 
-//This is a test
-
 //TEST CASES ->
 
 var input = "s2324";
