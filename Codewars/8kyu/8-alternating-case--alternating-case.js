@@ -10,7 +10,7 @@ Define String.prototype.toAlternatingCase (or a similar function/method such as 
 
 //SOLUTION(S) ->
 
-//* This one is a regulat function *//
+//* This one is a regular function *//
 
 let toAlternatingCase = (str) => {
 	let newStr = '';
