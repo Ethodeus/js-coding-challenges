@@ -22,10 +22,10 @@ Examples (input -> output)
 //SOLUTION(S) ->
 
 function isOpposite(s1, s2) {
-	if (s1 == s2) return false; //Of both strings are exactly the same, return false
-	if (s1.length != s2.length) return false; //if they are not the same length, return false
+	if (s1 == s2) return false;
+	if (s1.length != s2.length) return false;
 	for (let i = 0; i < s1.length; i++) {
-		if (s1[i] == s2[i]) return false; //if any
+		if (s1[i] == s2[i]) return false;
 		if (s1[i].toLowerCase() != s2[i].toLowerCase()) return false;
 	}
 	return true;
