@@ -28,9 +28,3 @@ class Cube {
 		this.side = Math.abs(n);
 	}
 }
-
-//TEST CASES ->
-
-console.log();
-console.log();
-console.log();
