@@ -23,10 +23,17 @@ Whatever you do, do not change what the function does. Good luck :)
 
 //SOLUTION(S) ->
 
-let str = "You're a(n)"
-let describeAge = (age) => age <= 12 ? `${str} kid` : age >= 13 && age <= 17 ? `${str} teenager` : age >= 18 && age <= 64 ? `${str} adult` : `${str} elderly`
+let str = "You're a(n)";
+let describeAge = (age) =>
+	age <= 12 ? `${str} kid` : age >= 13 && age <= 17 ? `${str} teenager` : age >= 18 && age <= 64 ? `${str} adult` : `${str} elderly`;
 
 //spaces also count but it looks gross without them
+
+//Codewars alternative ->
+
+function describeAge(age) {
+	return "You're a(n) " + (age < 13 ? 'kid' : age < 18 ? 'teenager' : age < 65 ? 'adult' : 'elderly');
+}
 
 //TEST CASES ->
 
