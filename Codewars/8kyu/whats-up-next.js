@@ -18,14 +18,8 @@ nextItem("testing", "t") # "e"
 function nextItem(xs, item) {
 	var found = false;
 	for (var x of xs) {
-		if (found) return x;
+		if (found) return x; //this only runs when the second 'if' is true and the value of found is changed to true, the reason it returns the next value is because the loop is going through the item next to item when found is true
 		if (x == item) found = true;
 	}
 	return undefined;
 }
-
-//TEST CASES ->
-
-console.log();
-console.log();
-console.log();
